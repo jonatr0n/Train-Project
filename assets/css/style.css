@@ -1,0 +1,22 @@
+.jumbotron, .row  {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url("../images/FRA_locomotive.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+.panel-body {
+    background: rgb(229, 226, 226);
+    padding-left: 10px;
+}
+
+.panel-title {
+    background: rgb(196, 186, 186);
+    padding-left: 2px;
+    border: black solid 1px;
+}
