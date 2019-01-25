@@ -1,13 +1,4 @@
-// Steps to complete:
-
-// 1. Initialize Firebase
-// 2. Create button for adding new employees - then update the html + update the database
-// 3. Create a way to retrieve employees from the employee database.
-// 4. Create a way to calculate the months worked. Using difference between start and current time.
-//    Then use moment.js formatting to set difference in months.
-// 5. Calculate Total billed
-
-// 1. Initialize Firebase
+// Initialize Firebase
 var config = {
   apiKey: "AIzaSyDsd8uMt68nLETy8Pzs-uDlPrGwTlI4xso",
   authDomain: "train-project-e93c6.firebaseapp.com",
@@ -47,6 +38,7 @@ $("#addTrainBtn").on("click", function () {
   return false;
 });
 
+// pull data into vars
 database.ref().on("child_added", function (childSnapshot) {
   console.log(childSnapshot.val());
 
